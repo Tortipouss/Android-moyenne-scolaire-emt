@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#42B656</color>
+    <color name="colorPrimaryDark">#e6ac00</color>
+    <color name="colorAccent">#d9d9d9</color>
+
+    <color name="lightYellow">#ffffb3</color>
+    <color name="mediumYellow">#ffdf80</color>
+    <color name="darkYellow">#ffd24d</color>
+    <color name="lightGrey">#d9d9d9</color>
+    <color name="darkGrey">#a2a2a2</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="red">#ff0000</color>
+    <color name="orange">#ffa500</color>
+    <color name="green">#00ff00</color>
+
+    <color name="divtec_inf_bull_entete_text">#fff</color>
+    <color name="divtec_inf_bull_entete_text_moyennes">#000</color>
+    <color name="divtec_inf_bull_entete_fond">#7979F1</color>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentDivtecInfModules">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerViewInf"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/divtec_inf_mod_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez votre note ici (laissez vide pour l'effacer du bulletin)"
+            android:autofillHints="0.5"
+            android:inputType="phone"
+            android:visibility="invisible">
+        </EditText>
+
+        <Button
+            android:id="@+id/divtec_inf_mod_button_confirm"
+            android:text="Confirmer"
+            android:layout_below="@+id/divtec_inf_mod_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+        </Button>
+        <Button
+            android:id="@+id/divtec_inf_mod_button_cancel"
+            android:text="Retour"
+            android:layout_below="@+id/divtec_inf_mod_button_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+        </Button>
+
+    </RelativeLayout>
+
+</FrameLayout>

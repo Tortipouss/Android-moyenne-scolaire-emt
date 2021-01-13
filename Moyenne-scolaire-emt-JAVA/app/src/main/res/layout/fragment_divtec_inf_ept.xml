@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentDivtecInfEpt">
+
+    <RelativeLayout
+        android:id="@+id/divtec_inf_ept_rlyt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RadioGroup
+            android:id="@+id/divtec_inf_ept_rbtgp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:theme="@style/RadioButton">
+            <RadioButton
+                android:id="@+id/divtec_inf_rb_inf_an1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Année 1">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/divtec_inf_rb_inf_an2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Année 2">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/divtec_inf_rb_inf_an3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Année 3">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/divtec_inf_rb_inf_an4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Année 4">
+            </RadioButton>
+        </RadioGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/divtec_inf_ept_recyclView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divtec_inf_ept_rbtgp"
+            android:orientation="vertical"
+            android:padding="5dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/divtec_inf_ept_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez votre note ici (laissez vide pour l'effacer du bulletin)"
+            android:autofillHints="0.5"
+            android:inputType="phone"
+            android:visibility="invisible">
+        </EditText>
+
+        <Button
+            android:id="@+id/divtec_inf_ept_button_confirm"
+            android:text="Confirmer"
+            android:layout_below="@+id/divtec_inf_ept_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+        </Button>
+        <Button
+            android:id="@+id/divtec_inf_ept_button_cancel"
+            android:text="Retour à la page des moyenne"
+            android:layout_below="@+id/divtec_inf_ept_button_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+        </Button>
+
+    </RelativeLayout>
+
+</FrameLayout>

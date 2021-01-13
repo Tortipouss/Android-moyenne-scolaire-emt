@@ -1,0 +1,1692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentDivtecInfBulletin">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Note globale -->
+            <TableLayout
+                android:id="@+id/divtec_inf_tbly_note_globale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:background="@color/divtec_inf_bull_entete_fond">
+                    <TextView android:layout_column="1" android:background="@color/black" android:padding="3dip"/>
+                    <TextView
+                        android:layout_column="9"
+                        android:text="Note Globale   "
+                        android:padding="3dip"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_moy_tot"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text_moyennes"/>
+                </TableRow>
+
+                <View
+                    android:layout_height="4dip"
+                    android:background="#FF909090" />
+
+            </TableLayout>
+
+            <!-- EPT et CG -->
+            <TableLayout
+                android:id="@+id/divtec_inf_tbly_one"
+                android:layout_below="@+id/divtec_inf_tbly_note_globale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4,5,6,7,8,9">
+
+                <!-- Culture générale -->
+                <TableRow
+                    android:background="@color/divtec_inf_bull_entete_fond">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" Enseignement de la culture générale   "
+                        android:textSize="10sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="2"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="3"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="4"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="5"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="6"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="7"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text="8"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="9"
+                        android:padding="3dip"
+                        android:text=" "
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_moy_cg"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text_moyennes"/>
+                </TableRow>
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" Soc   SOCIÉTÉ"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_societe_sem1"
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_societe_sem2"
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="3.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_societe_sem3"
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_societe_sem4"
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_societe_sem5"
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_societe_sem6"
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_societe_sem7"
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_societe_sem8"
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="9"
+                        android:padding="3dip"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_societe_finale"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.3"
+                        android:textSize="12sp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" LAC   Langue et communication"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_langueEtComm_sem1"
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_langueEtComm_sem2"
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_langueEtComm_sem3"
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_langueEtComm_sem4"
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_langueEtComm_sem5"
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_langueEtComm_sem6"
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_langueEtComm_sem7"
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_langueEtComm_sem8"
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="9"
+                        android:padding="3dip"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_langueEtComm_finale"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="4dip"
+                    android:background="#FF909090" />
+
+                <!-- Compétence de base élargies -->
+                <TableRow
+                    android:background="@color/divtec_inf_bull_entete_fond">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" Compétences de base élargies"
+                        android:textSize="10sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="2"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="3"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="4"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="5"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="6"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="7"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text="8"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="9"
+                        android:padding="3dip"
+                        android:text="MI"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_moy_ept"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text_moyennes"/>
+                </TableRow>
+
+                <!-- Math -->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text="@string/bra_mathematiques"
+                        android:textSize="11sp" />
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_math_sem1"
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_math_sem2"
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="3.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_math_sem3"
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_math_sem4"
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_math_sem5"
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_math_sem6"
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_math_sem7"
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_math_sem8"
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_math_MI"
+                        android:layout_column="9"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_math_finale"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.3"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <!-- Science -->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="@string/bra_sciences_naturelles"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_science_sem1"
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_science_sem2"
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="3.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_science_sem3"
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_science_sem4"
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_science_sem5"
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_science_sem6"
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_science_sem7"
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_science_sem8"
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="9"
+                        android:padding="3dip"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_science_finale"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.3"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <!-- Anglais  -->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text="@string/bra_anglais"
+                        android:textSize="11sp" />
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_anglais_sem1"
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_anglais_sem2"
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="3.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_anglais_sem3"
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_anglais_sem4"
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_anglais_sem5"
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_anglais_sem6"
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_anglais_sem7"
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_anglais_sem8"
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="9"
+                        android:padding="3dip"
+                        android:text=" "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_anglais_finale"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.3"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <!--Economie-->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="@string/bra_economie_entreprise"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_economie_sem1"
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_economie_sem2"
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="3.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_economie_sem3"
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_economie_sem4"
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_economie_sem5"
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_economie_sem6"
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_economie_sem7"
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_economie_sem8"
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="9"
+                        android:padding="3dip"
+                        android:text=" "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_economie_finale"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.3"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <!--Education Physique-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text="@string/bra_education_physique"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_edu_physique_sem1"
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_edu_physique_sem2"
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="3.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_edu_physique_sem3"
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_edu_physique_sem4"
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_edu_physique_sem5"
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_edu_physique_sem6"
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_edu_physique_sem7"
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_edu_physique_sem8"
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="9"
+                        android:padding="3dip"
+                        android:text=" "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_edu_physique_finale"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.3"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="4dip"
+                    android:background="#FF909090" />
+            </TableLayout>
+
+            <!-- Modulse [en-tete] -->
+            <TableLayout
+                android:id="@+id/divtec_inf_tbly_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divtec_inf_tbly_one"
+                android:stretchColumns="0,1,2">
+
+                <TableRow
+                    android:background="@color/divtec_inf_bull_entete_fond">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Compétences informatiques"
+                        android:textSize="10sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_moy_mod"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.1"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text_moyennes"/>
+                </TableRow>
+
+                <!-- Modules inf standard -->
+                <TableRow
+                        android:background="@color/divtec_inf_bull_entete_fond">
+                        <TextView
+                            android:layout_column="0"
+                            android:text="Modules informatiques"
+                            android:textSize="10sp"
+                            android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                        <TextView
+                            android:id="@+id/divtec_inf_txtvi_moy_mod_std"
+                            android:layout_column="10"
+                            android:padding="3dip"
+                            android:text="4.0"
+                            android:textSize="12sp"
+                            android:textColor="@color/divtec_inf_bull_entete_text_moyennes"/>
+
+                    </TableRow>
+            </TableLayout>
+
+            <!-- Modules [Elements] -->
+            <TableLayout
+                android:id="@+id/divtec_inf_tbly_four"
+                android:layout_below="@+id/divtec_inf_tbly_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1,2">
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#FF909090" />
+
+                <!-- 100 -->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M100"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Distinguer, préparer et évaluer des données"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_100"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 104 -->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M104"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Implémenter un modèle de données"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_104"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 114-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M114"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Mettre en oeuvre des systèmes de codification"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_114"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 115-->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M115"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Mettre en oeuvre des équipements multimédias"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_115"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 117-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M117"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Mettre en place l'infrastructure informatique d'une PME"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_117"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 122-->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M122"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Automatiser des procedures à l'aide de scripts"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_122"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 123-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M123"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Activer les services d'un serveur"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_123"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 124-->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M124"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Etendre ou modifier une place de travail avec ordinateur"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_124"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 129-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M129"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Mettre en service des composants réseaux"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_129"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 133-->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M133"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Réaliser des applications Web en Session-Handling"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_133"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 140-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M140"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Administrer et exploiter des bases de données"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_140"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 143-->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M143"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Implanter un système de sauvegarde et de restauration "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_143"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 145-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M145"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Exploiter ou etendre un réseau"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_145"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 151-->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M151"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Integrer des bases de données dans des applications web"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_151"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 153-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M153"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Développer les modèles de données"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_153"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 159-->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M159"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Configurer et synchroniser le service d'annuaire"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_159"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 182-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M182"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Implémenter la sécurité système"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_182"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 214-->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M214"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Instruire les utilisateurs sur le comportement"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_214"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 226-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M226"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Implémenter orienté objet"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_226"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 306 -->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M306"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Réaliser un petit projet informatique"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_306"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 403 -->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M403"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Implémenter de manière procedurale"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_403"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 404 -->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M404"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Programmer orienté objet seon directives"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_404"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 431-->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M431"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Executer des mandats"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_431"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <!-- 437 -->
+                <TableRow
+                    android:background="@color/lightGrey">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M437"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Travailler dans le support"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_437"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <!-- Modules inter Entrprises [en-tete] -->
+            <TableLayout
+                    android:id="@+id/divtec_inf_tbly_five"
+                    android:layout_below="@+id/divtec_inf_tbly_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1,2">
+
+                <!-- Modules inf interentreprise -->
+                <TableRow
+                    android:background="@color/divtec_inf_bull_entete_fond">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Modules interentreprise"
+                        android:textSize="10sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_moy_mod_interEntreprise"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text_moyennes"/>
+
+                </TableRow>
+            </TableLayout>
+
+            <!-- Modueles inter Entreprises [Elements] -->
+            <TableLayout
+                android:id="@+id/divtec_inf_tbly_six"
+                android:layout_below="@+id/divtec_inf_tbly_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1,2">
+
+                <!-- 101 -->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M101"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Réaliser et publier un site Web"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_101"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <!-- 105 -->
+                <TableRow
+                    android:background="@color/lightGrey">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M105"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Traiter une base de données avec SQL"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_105"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <!-- 127 -->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M127"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Assurer l'exploitation de serveurs"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_127"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <!-- 302 -->
+                <TableRow
+                    android:background="@color/lightGrey">
+
+                <TextView
+                        android:layout_column="0"
+                        android:text=" M302"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Utiliser les fonctions avancées d'Office"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_302"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <!-- 304 -->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M304"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Installer et configurer un ordinateur mono-poste"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_304"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <!-- 305 -->
+                <TableRow
+                    android:background="@color/lightGrey">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M305"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Installer, configurer et administrer un système d'exploitation"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_305"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <!-- 340 -->
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text=" M340"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Virtualiser une infrastructure informatique"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_mod_340"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.0"
+                        android:textSize="12sp" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- Atelier -->
+            <TableLayout
+                android:id="@+id/divtec_inf_tbly_seven"
+                android:layout_below="@id/divtec_inf_tbly_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4,5,6,7">
+
+                <TableRow
+                    android:background="@color/divtec_inf_bull_entete_fond">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Formation à la pratique professionnelle   "
+                        android:textSize="10sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="1"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="2"
+                        android:textColor="@color/divtec_inf_bull_entete_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="3"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="4"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="5"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="6"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="7"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text=" TPI "
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text"/>
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_moy_atelier"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp"
+                        android:textColor="@color/divtec_inf_bull_entete_text_moyennes"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Pratique à l'atelier ou en entreprise"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_atelier_sem1"
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:text="4.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_atelier_sem2"
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:text="3.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_atelier_sem3"
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:text="5.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_atelier_sem4"
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_atelier_sem5"
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_atelier_sem6"
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_atelier_sem7"
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_atelier_sem8"
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:text="6.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/divtec_inf_txtvi_atelier_finale"
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:text="4.3"
+                        android:textSize="12sp" />
+                </TableRow>
+                <TableRow
+                    android:background="@color/black">
+                    <TextView
+                        android:layout_column="0" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dip"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="2"
+                        android:padding="3dip"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="3"
+                        android:padding="3dip"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="4"
+                        android:padding="3dip"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="5"
+                        android:padding="3dip"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="6"
+                        android:padding="3dip"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="7"
+                        android:padding="3dip"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="8"
+                        android:padding="3dip"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_column="10"
+                        android:padding="3dip"
+                        android:textSize="12sp" />
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
