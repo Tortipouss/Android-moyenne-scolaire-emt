@@ -1,4 +1,4 @@
-# Android application for computer scientist grade calulating, technicals works school at Porrentruy, JU, Swizerland. 
+# Android application for computer scientist apprentices, technicals works school at Porrentruy, JU, Swizerland. 
 
 ## Requirements :
 - Android >= 6.0
