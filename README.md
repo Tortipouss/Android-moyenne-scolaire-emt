@@ -1,5 +1,10 @@
 # Android application for computer scientist apprentices, technicals works school at Porrentruy, JU, Swizerland. 
 
+preview 1        | preview 2
+:-------------------------:|:-------------------------:
+<img src="gitRes/notes1.jpg" width="250px"> | <img src="gitRes/notes2.jpg" width="250px">
+
+
 ## Requirements :
 - Android >= 6.0
 - 2.5 Mb free
