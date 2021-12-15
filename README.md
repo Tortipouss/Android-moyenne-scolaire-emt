@@ -1,17 +1,17 @@
-# Digital report card for computer scientist apprentices, technicals works school at Porrentruy, JU, Swizerland. 
+# Application de bulletin scolaire pour les apprentis de l'école des métiers techniques à Porrentruy
 
 preview 1        | preview 2
 :-------------------------:|:-------------------------:
 <img src="gitRes/notes1.jpg" width="250px"> | <img src="gitRes/notes2.jpg" width="250px">
 
-## Requirements :
+## Configuration minimale :
 - Android >= 6.0
-- 2.5 MB of free disk space
+- 2.5 MB d'espace disque de libre
 
 ## Installation
-1. Download the apk on your Android phone
-2. Install the apk
-3. If require, allow installation from untrusted sources
-4. Enjoy
+1. Télécharger l'APK sur le téléphone Android
+2. Installer l'APK
+3. Si nécessaire, autoriser l'installation d'application depuis les sources externes dans les paramètres du téléphone.
 
-No permissions are required by the app to work.
+Aucune permission n'est demandé par l'application pour fonctionner.
+
